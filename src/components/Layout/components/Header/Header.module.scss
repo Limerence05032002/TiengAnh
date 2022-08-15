@@ -5,7 +5,61 @@
     display: flex;
     justify-content: center;
 }
+
 .inner {
     height: 100%;
     width: var(--default-layout-width);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }   
+
+.logo{
+    color: var(--color-main);
+    font-size: 1.8rem;
+    user-select: none;
+}
+
+.service{
+    display: flex;
+}
+.service-learn, .service-story, .service-introduce{
+    display: flex;
+    margin-right: 30px;
+    user-select: none;
+    color:rgb(123, 123, 123);
+    font-size: large;
+    transition: .3s;
+    &:hover {
+        color: var(--color-hover);
+    }
+}
+.icon-learn, .icon-story, .icon-introduce {
+    margin-right: 10px;
+}
+
+
+
+.action{
+    display: flex;
+}
+
+.action-signUp {
+    margin-right: 10px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    &:hover{
+        background-color: rgb(244, 242, 242);
+    }
+}
+.action-logIn {
+    background-color: var(--color-main);
+    padding: 10px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    &:hover{
+        background-color: var( --color-hover);
+    }
+}
