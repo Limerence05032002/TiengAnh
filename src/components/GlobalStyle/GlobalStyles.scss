@@ -3,6 +3,10 @@
 
 :root {
     --white: #fff;
+
+    // Default Layout
+    --default-layout-header-height: 60px;
+    --default-layout-width: 1140px;
 }
 *{
     margin: 0;
