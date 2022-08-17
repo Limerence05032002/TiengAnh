@@ -1,13 +1,30 @@
-// // .wrapper {
-// //     display: flex;
-// // }
-// .learn {
-//     cursor: pointer;
-//     margin-right: 20px;
-//     display: flex;
-//     user-select: none;
-//     color: rgb(102, 102, 102);
-//     &:hover{
-//         color: rgb(94, 93, 92);
-//     }
-// }
+.wrapper {
+    cursor: pointer;
+    border: none;
+    /* display: flex; */
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-radius: 20px;
+    color: white;
+    border: 1px solid transparent;
+    + .wrapper {
+        margin-left: 10px;
+    }
+}
+.main{
+    color: black;
+    background-color: white;
+    &:hover{
+        background-color: rgb(244, 244, 244);
+    }
+}
+.primary {
+    background-color: var(--color-main);
+    &:hover{
+        opacity: 0.7;
+    }
+}
+.outLine{
+    color: rgb(4, 4, 4);
+}

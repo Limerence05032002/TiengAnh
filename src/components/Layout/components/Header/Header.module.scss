@@ -40,26 +40,23 @@
 
 
 
-.action{
+.action-login{
+    display: flex;
+    user-select: none;
+}
+
+div.action-static{
     display: flex;
 }
 
-.action-signUp {
-    margin-right: 10px;
-    padding: 10px 10px;
-    border-radius: 20px;
-    cursor: pointer;
-    &:hover{
-        background-color: rgb(244, 242, 242);
-    }
+.setting-profile{
+    width: 300px;
+    position: relative;
 }
-.action-logIn {
-    background-color: var(--color-main);
-    padding: 10px 10px;
-    border-radius: 20px;
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    &:hover{
-        background-color: var( --color-hover);
-    }
+
+.tittle-service{
+    padding: 10px;
+}
+.action{
+    display: flex;
 }
