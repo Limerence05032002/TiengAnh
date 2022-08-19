@@ -1,11 +1,13 @@
 .Wrapper{
-    width: 100%;
-    max-height: min((100vh - 96px) - 60px, 734px);
-    min-height: 100px;
-    padding-top: 8px;
-    background-color: aliceblue;
-    box-shadow: rgb(0 0 0 /12% ) 0px 2px 12px;
+    margin-left: -240px;
+    position: absolute;
+    margin-top: 4px;
+    /* width: 100%; */
+    /* max-height: min(100vh - 96px - 60px, 734px); */
+    /* min-height: 100px; */
+    /* padding-top: 8px; */
+    background-color: rgb(237, 237, 237);
+    box-shadow: rgb(0 0 0 / 12%) 0px 2px 12px;
     border-radius: 10px;
     padding-top: 8px;
-    border: 1px solid rgb(223, 223, 223);
 }

@@ -1,13 +1,15 @@
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChalkboard,faChalkboardUser,faBook,faCloudUpload, faBell,faAddressCard, faGear } from '@fortawesome/free-solid-svg-icons';
+import {
+    faChalkboard, faChalkboardUser, faBook, faBell,faCircleUser
+} from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind'
 import styles from './Header.module.scss'
 import { Wrapper as WrapperPopper } from '~/components/Popper';
 import Button from '~/components/Button';
 
 import Tippy from '@tippyjs/react';
-import 'tippy.js/dist/tippy.css'; 
+import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
 import ServiceItems from '~/components/ServiceItems';
 
@@ -19,7 +21,7 @@ function Header() {
 
     const show = () => setvisible(true)
     const hide = () => setvisible(false)
-    const currentUser = false
+    const currentUser = true
 
     return (
         <header className={cx('wrapper')}>
@@ -29,7 +31,7 @@ function Header() {
                 </div>
                 <div className={cx('service')}>
                     <span className={cx('service-learn')}>
-                        <FontAwesomeIcon className={cx('icon-learn')} icon={faChalkboard}/>
+                        <FontAwesomeIcon className={cx('icon-learn')} icon={faChalkboard} />
                         <h4>Học</h4>
                     </span>
                     <span className={cx('service-story')}>
@@ -44,40 +46,53 @@ function Header() {
 
                 {/* xử lí khi người dùng đăng nhập */}
                 <>
-                {currentUser ? (
+                    {currentUser ? (
                         <div className={cx('action-static')}>
-                            <div className={cx('notion-icon')}>
-                                <FontAwesomeIcon icon={faBell} />
-                            </div>
-                            <Tippy 
-                                render={(attrs) => (
-                                    <WrapperPopper>
-                                    <div className={cx('setting-profile')} tabIndex='-1' {...attrs}>
-                                        <div onMouseOver={visible ? hide : show}>
+                            <div className={cx('notion')}>
+                                <FontAwesomeIcon className={cx('notion-icon')} icon={faBell} />
+                                <h4 className={cx('user')}>
+                                    <FontAwesomeIcon icon={faCircleUser} />
+                                    <div className={cx('current-user')}>
+                                        <WrapperPopper >
+                                        <div className={cx('setting-profile')} >
                                             <h4 className={cx('tittle-service')}>Tài khoản</h4>
-                                            <hr className={cx('line')}></hr>
                                             <ServiceItems />
                                         </div>
-                                    </div>    
-                                    </WrapperPopper>
-                                )}
-                            >   
-                                <div className={cx('current-user')}>
-                                    trung anh   
-                                </div>
-                            </Tippy>
+                                        </WrapperPopper>
+                                    </div>
+                                </h4>
+                            </div>
+                            
+
                         </div>
                     ) : (
                         <>
                             <div className={cx('action')}>
                                 <Button main>Đăng nhập</Button>
                                 <Button primary >Đăng ký</Button>
+                                {/* <div className={cx('more-btn')}>
+                                        <FontAwesomeIcon icon={faEllipsisVertical} />
+                                        <div className={cx('more-content')}>
+                                            <span className={cx('content-item')}>
+                                                <FontAwesomeIcon icon={faLanguage} />
+                                                <h4 className={cx('content-text')}>English</h4>
+                                            </span>
+                                            <span className={cx('content-item')}>
+                                                <FontAwesomeIcon icon={faCircleQuestion}/>
+                                                <h4 className={cx('content-text')}>Feedback and help</h4>
+                                            </span>
+                                            <span className={cx('content-item')}>
+                                                <FontAwesomeIcon icon={faKeyboard} />
+                                                <h4 className={cx('content-text')}>Keyboard shortcuts</h4>
+                                            </span>
+                                        </div>
+                                    </div> */}
                             </div>
                         </>
                     )}
                 </>
             </div>
-        </header>    
+        </header>
     )
 }
 export default Header

@@ -39,7 +39,6 @@
 }
 
 
-
 .action-login{
     display: flex;
     user-select: none;
@@ -51,12 +50,82 @@ div.action-static{
 
 .setting-profile{
     width: 300px;
-    position: relative;
 }
 
 .tittle-service{
-    padding: 10px;
+    position: relative;
+    padding: 5px 15px;
+    font-size: 1.6rem;
 }
 .action{
     display: flex;
 }
+
+.notion{
+    display: flex;
+    align-items: center;
+}
+
+.notion-icon{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.current-user{
+    display: none;
+}
+
+.user{
+    margin-left: 15px;
+    font-size: 30px;
+    &:hover .current-user{
+        display: block;
+    }
+}
+
+
+
+// .more-btn{
+//     margin-left: 10px;
+//     font-size: large;
+//     padding-top: 10px;
+//     padding: 0px 10px 10px 10px;
+//     margin-top: 10px;
+//     cursor: pointer;
+//     position: relative;
+//     display: inline-block;
+// }
+
+// .more-content{
+//     margin-top: 15px;
+//     margin-left: -180px;
+//     border-radius: 20px;
+//     display: none;
+//     position: absolute;
+//     background-color: var(--color-nohover);
+//     min-width: 220px;
+//     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+//     padding: 12px 16px;
+//     z-index: 1;
+//     &::after{
+//         content: "";
+//         position: absolute;
+//         top: -12px;
+//         left: 170px;
+//         border-bottom: 12px solid var(--color-nohover);
+//         border-right: 12px solid transparent;
+//         border-left: 12px solid transparent;
+//     }
+// }
+
+// .more-btn:hover .more-content{
+//     display: block;
+// }
+
+// .content-item{
+//     font-size: 1.6rem;
+//     display: flex;
+// }
