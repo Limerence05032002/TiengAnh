@@ -1,4 +1,105 @@
 .wrapper {
     width: 380px;
     min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+//Ranking
+.rank{
+    width: 350px;
+    height: 300px;
+    border: 2px solid rgb(228, 228, 228);
+    border-radius: 20px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.wrapp_rank{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.rank_icon{
+    font-size: 150px;
+    margin-bottom: 20px;
+    color: cadetblue;
+}
+
+ .rank_text{
+    margin-bottom: 10px;
+}
+
+.wrapp_rank .rank_decription{
+    margin-left: 17px;
+}
+// Hoạt động , thành tích đạt được
+.activity, .achievement{
+    width: 350px;
+    height: 234px;
+    border: 2px solid rgb(228, 228, 228);
+    border-radius: 20px;
+    margin-top: 25px;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    align-items: center;
+}
+.wrapp_activity{
+    width: 100%;
+    /* font-size: 20px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.activity_text{
+    flex: 1;
+    margin: 15px 10px;
+
+}
+
+.activity_content{
+    display: flex;
+    flex: 11;
+    /* font-size: 20px; */
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.activity_decription{
+    font-size: 20px;
+
+}
+
+.activity_icon {
+    font-size: 100px;
+
+}
+
+.more_activity{
+    margin-top: 47px;
+    font-size: 14px;
+    display: flex;
+    margin-left: 170px;
+}
+
+.more_text{
+    font-size: 20px;
+}
+
+.more_icon{
+    font-size: 20px;
+}
+
+// Bảng xếp hạng
+.charts{
+    width: 350px;
+    height: 500px;
+    border: 2px solid rgb(228, 228, 228);
+    border-radius: 20px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
 }
