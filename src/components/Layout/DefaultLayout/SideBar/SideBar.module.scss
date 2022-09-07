@@ -36,7 +36,7 @@
     margin-left: 17px;
 }
 // Hoạt động , thành tích đạt được
-.activity, .achievement{
+.activity{
     width: 350px;
     height: 234px;
     border: 2px solid rgb(228, 228, 228);
@@ -69,7 +69,7 @@
 }
 
 .activity_decription{
-    font-size: 20px;
+    font-size: 11px;
 
 }
 
@@ -79,10 +79,9 @@
 }
 
 .more_activity{
-    margin-top: 47px;
-    font-size: 14px;
+    margin-top: -20px;
     display: flex;
-    margin-left: 170px;
+    margin-left: 200px;
 }
 
 .more_text{
@@ -103,3 +102,68 @@
     display: flex;
     justify-content: center;
 }
+.image_chart{
+    width: 156px;
+    /* font-size: large; */
+    height: auto;
+}
+
+/// Achievement
+
+.achievement{
+    width: 350px;
+    height: 234px;
+    border: 2px solid rgb(228, 228, 228);
+    border-radius: 20px;
+    margin-top: 25px;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapp_achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.achievement_text {
+    margin: 15px 10px;
+
+}
+
+.wrap_icon{
+    display: flex   ;
+}
+
+.achievement_icon {
+    font-size: 40px;
+    padding: 10px;
+    color: burlywood;
+}
+
+.achievement_decription {
+    /* align-items: center; */
+    text-align: center;
+    padding: 0px 30px;
+
+}
+
+.more_activity_2 {
+    margin-top: 15px;
+    display: flex;
+    margin-left: 200px;
+
+}
+
+.more_text {
+    font-size: large;
+
+}
+.more_icon{
+    font-size: 20px;
+}
+
