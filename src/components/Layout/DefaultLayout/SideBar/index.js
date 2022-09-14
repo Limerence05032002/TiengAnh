@@ -2,11 +2,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRankingStar, faTrophy, faChartLine,faCaretRight, faMagnet, faArchway, faAtom} from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind'
 import styles from './SideBar.module.scss'
-import chart from '~/image/Chart.png'
+import Barchart from "~/components/Layout/DefaultLayout/SideBar/chart"
+import React, { Component } from 'react';
+import {ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
 
 const cx = classNames.bind(styles)
 
 function SideBar() {
+    // Start Chart
+    
+
+    // End Chart
     return (
         <div className={cx('wrapper')}>
             <div className={cx('rank')}>
@@ -21,7 +27,7 @@ function SideBar() {
                 <div className={cx('wrapp_activity')}>
                     <h2 className={cx('activity_text')}>Chuỗi hoạt động</h2>
                     <div className={cx('activity_content')}>
-                        <img className={cx('image_chart')} src={chart}></img>
+                    <Barchart />
                         
                         <p className={cx('activity_decription')}>Theo dõi hoạt động học</p>
                     </div>
@@ -52,6 +58,7 @@ function SideBar() {
             <div className={cx('charts')}>
                 <div className={cx('wrapp_charts')}>
                     <h2 className={cx('charts_text')}>Xếp hạng</h2>
+                    
                 </div>
             </div>
         </div>
