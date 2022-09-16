@@ -56,16 +56,13 @@
 
 .activity_text{
     flex: 1;
-    margin: 15px 10px;
+    margin: 10px 10px;
 
 }
 
 .activity_content{
-    // display: flex;
-    // flex: 11;
-    /* font-size: 20px; */
-    flex-direction: row;
-    justify-content: space-around;
+    margin-right: 40px;
+    height: 165px;
 }
 
 .activity_decription{
@@ -79,17 +76,20 @@
 }
 
 .more_activity{
-    margin-top: -20px;
+    margin-top: -10px;
     display: flex;
-    margin-left: 200px;
+    margin-left: 210px;
 }
 
 .more_text{
-    font-size: 20px;
+    font-size: 13px;
+    /* font-size: large; */
+    color: blue;
+    cursor: pointer;
 }
 
-.more_icon{
-    font-size: 20px;
+.more_icon_2{
+    margin-left: 5px;
 }
 
 // Bảng xếp hạng
@@ -155,15 +155,15 @@
 .more_activity_2 {
     margin-top: 15px;
     display: flex;
-    margin-left: 200px;
+    margin-left: 170px;
 
 }
 
-.more_text {
-    font-size: large;
-
-}
 .more_icon{
-    font-size: 20px;
+    margin-left: 5px;
 }
-
+.more_text_2 {
+    font-size: 13px;
+    /* font-size: large; */
+    color: blue;
+}

@@ -1,5 +1,10 @@
 import React from "react";
-import { LineChart, ResponsiveContainer,Line, XAxis, YAxis } from 'recharts'
+import { LineChart, ResponsiveContainer,Line, XAxis, YAxis, CartesianGrid } from 'recharts'
+import classNames from 'classnames/bind'
+import styles from './chart.scss'
+
+const cx = classNames.bind(styles)
+
 
 const Pdata=[
     {
@@ -42,11 +47,12 @@ const Pdata=[
 
 const Barchart = () =>{
     return(
-        <div>
-            <ResponsiveContainer width={"30%"} aspect={3}>
+        <div className={cx("BarWrapper")}>
+            <ResponsiveContainer width={"100%"} aspect={2}>
                 <LineChart data={Pdata} width={20} height={30}>
+                    <CartesianGrid />
                     <XAxis dataKey={"name"} interval={'preserveStartEnd'}/>
-                    
+                    <YAxis />
                     <Line dataKey={"student"}/>
                 </LineChart>
 

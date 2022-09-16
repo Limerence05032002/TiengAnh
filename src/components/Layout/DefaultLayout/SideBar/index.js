@@ -28,9 +28,7 @@ function SideBar() {
                     <h2 className={cx('activity_text')}>Chuỗi hoạt động</h2>
                     <div className={cx('activity_content')}>
                     <Barchart />
-                        
-                        <p className={cx('activity_decription')}>Theo dõi hoạt động học</p>
-                    </div>
+                        </div>
                     <span className={cx('more_activity')}>
                         <p className={cx('more_text')}>Xem chi tiết </p>
                         <FontAwesomeIcon className={cx('more_icon')} icon={faCaretRight}></FontAwesomeIcon>
@@ -50,7 +48,7 @@ function SideBar() {
                     <p className={cx('achievement_decription')}>Chinh phục từ vựng chưa bao giờ dễ như vậy !</p>
                     <span className={cx('more_activity_2')}>
                         <p className={cx('more_text_2')}>Xem chi tiết </p>
-                        <FontAwesomeIcon className={cx('more_icon_2')} icon={faCaretRight}></FontAwesomeIcon>
+                        <FontAwesomeIcon className={cx('more_icon')} icon={faCaretRight}></FontAwesomeIcon>
                     </span>
                 </div>
             </div>
