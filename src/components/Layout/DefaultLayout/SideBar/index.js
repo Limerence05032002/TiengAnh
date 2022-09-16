@@ -52,14 +52,34 @@ function SideBar() {
                     </span>
                 </div>
             </div>
-
-            <div className={cx('charts')}>
-                <div className={cx('wrapp_charts')}>
-                    <h2 className={cx('charts_text')}>Xếp hạng</h2>
-                    
+                <div className={cx("leaderboard")}>
+                <h1>
+                    Xếp hạng
+                </h1>
+                <ul>
+                    <li>
+                        <mark>Jerry Wood</mark>
+                        <small>315</small>
+                    </li>
+                    <li>
+                        <mark>Brandon Barnes</mark>
+                        <small>301</small>
+                    </li>
+                    <li>
+                        <mark>Raymond Knight</mark>
+                        <small>292</small>
+                    </li>
+                    <li>
+                        <mark>Trevor McCormick</mark>
+                        <small>245</small>
+                    </li>
+                    <li>
+                        <mark>Andrew Fox</mark>
+                        <small>203</small>
+                    </li>
+                </ul>
                 </div>
             </div>
-        </div>
     )
 }
 export default SideBar
