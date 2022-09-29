@@ -1,18 +1,12 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRankingStar, faTrophy, faChartLine,faCaretRight, faMagnet, faArchway, faAtom} from '@fortawesome/free-solid-svg-icons';
+import { faRankingStar, faTrophy,faCaretRight, faMagnet, faArchway, faAtom} from '@fortawesome/free-solid-svg-icons';
 import classNames from 'classnames/bind'
 import styles from './SideBar.module.scss'
 import Barchart from "~/components/Layout/DefaultLayout/SideBar/chart"
 import React, { Component } from 'react';
-import {ResponsiveContainer, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
-
 const cx = classNames.bind(styles)
 
 function SideBar() {
-    // Start Chart
-    
-
-    // End Chart
     return (
         <div className={cx('wrapper')}>
             <div className={cx('rank')}>
