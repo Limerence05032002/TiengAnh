@@ -8,7 +8,6 @@ import styles from './Header.module.scss'
 import { Wrapper as WrapperPopper } from '~/components/Popper';
 import Button from '~/components/Button';
 
-import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { useState } from 'react';
 import ServiceItems from '~/components/ServiceItems';
